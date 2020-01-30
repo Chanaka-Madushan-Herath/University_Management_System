@@ -1,0 +1,59 @@
+drop database if exists university_management_system;
+create database university_management_system;
+use university_management_system;
+CREATE TABLE `lecturer` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL
+);
+CREATE TABLE `lecturer_subject` (
+  `lecturer_lecturer_id` int(11) NOT NULL,
+  `subject_subject_id` int(11) NOT NULL
+);
+CREATE TABLE `student` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `age` int(11) NOT NULL,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL
+);
+CREATE TABLE `student_subject` (
+  `student_student_id` int(11) NOT NULL,
+  `subject_subject_id` int(11) NOT NULL
+);
+CREATE TABLE `subject` (
+  `subject_id` int(11) NOT NULL,
+  `subject_code` varchar(45) NOT NULL,
+  `subject_name` varchar(100) NOT NULL
+);
+ALTER TABLE `lecturer`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username_UNIQUE` (`username`);
+ALTER TABLE `lecturer_subject`
+  ADD PRIMARY KEY (`lecturer_lecturer_id`,`subject_subject_id`),
+  ADD KEY `fk_lecturer_subject_lecturer1_idx` (`lecturer_lecturer_id`),
+  ADD KEY `fk_lecturer_subject_subject_idx` (`subject_subject_id`);
+ALTER TABLE `student`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username_UNIQUE` (`username`);
+ALTER TABLE `student_subject`
+  ADD PRIMARY KEY (`student_student_id`,`subject_subject_id`),
+  ADD KEY `fk_student_subject_student1_idx` (`student_student_id`),
+  ADD KEY `fk_student_subject_subject1_idx` (`subject_subject_id`);
+ALTER TABLE `subject`
+  ADD PRIMARY KEY (`subject_id`);
+ALTER TABLE `lecturer`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `student`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `subject`
+  MODIFY `subject_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `lecturer_subject`
+  ADD CONSTRAINT `fk_lecturer_subject_lecturer1` FOREIGN KEY (`lecturer_lecturer_id`) REFERENCES `lecturer` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_lecturer_subject_subject` FOREIGN KEY (`subject_subject_id`) REFERENCES `subject` (`subject_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `student_subject`
+  ADD CONSTRAINT `fk_student_subject_student1` FOREIGN KEY (`student_student_id`) REFERENCES `student` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_student_subject_subject1` FOREIGN KEY (`subject_subject_id`) REFERENCES `subject` (`subject_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
