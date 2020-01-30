@@ -84,6 +84,13 @@ CREATE TABLE `subject` (
   `subject_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `subject` (`subject_id`, `subject_code`, `subject_name`) VALUES
+(1, 'seng 11111', 'object oriented programming'),
+(2, 'seng 11112', 'introduction to database'),
+(3, 'seng 11123', 'project management'),
+(4, 'PMAT_11114', 'Discreet Mathematics'),
+(5, 'SENG_11115', 'Management');
+
 --
 -- Indexes for dumped tables
 --
