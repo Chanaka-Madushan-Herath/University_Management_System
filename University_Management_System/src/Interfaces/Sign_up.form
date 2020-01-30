@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Interfaces.Sign_up">
+  <grid id="27dc6" binding="rootpanel1" layout-manager="GridLayoutManager" row-count="10" column-count="17" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="679" height="392"/>
+    </constraints>
+    <properties>
+      <background color="-13223621"/>
+      <enabled value="true"/>
+      <font style="1"/>
+      <foreground color="-10131350"/>
+    </properties>
+    <border type="line">
+      <color color="-15208746"/>
+    </border>
+    <children>
+      <component id="ba3da" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <text value="Name: "/>
+        </properties>
+      </component>
+      <component id="9639e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Age:  "/>
+        </properties>
+      </component>
+      <component id="a5663" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="User Name: "/>
+        </properties>
+      </component>
+      <component id="c78fa" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Password: "/>
+        </properties>
+      </component>
+      <hspacer id="e6d9f">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="2b551" class="javax.swing.JPasswordField" binding="password">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="10" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Arial Black" size="12" style="3"/>
+          <foreground color="-15724271"/>
+        </properties>
+      </component>
+      <component id="7173d" class="javax.swing.JTextField" binding="User_name">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="10" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Arial Black" size="12" style="3"/>
+          <foreground color="-13223621"/>
+        </properties>
+      </component>
+      <component id="c9329" class="javax.swing.JTextField" binding="Age">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="10" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <font name="Arial Black" size="12" style="3"/>
+          <foreground color="-13223621"/>
+        </properties>
+      </component>
+      <hspacer id="20211">
+        <constraints>
+          <grid row="3" column="16" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="2e786">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="bf44d" class="javax.swing.JFormattedTextField" binding="name">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="10" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <columns value="0"/>
+          <focusLostBehavior value="1"/>
+          <font name="Arial Black" size="12" style="3"/>
+          <foreground color="-13223621"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b3ef8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <text value="Select your role: "/>
+        </properties>
+      </component>
+      <component id="946dd" class="javax.swing.JRadioButton" binding="lecturerRadioButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13223621"/>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <selected value="true"/>
+          <text value="Lecturer  "/>
+        </properties>
+      </component>
+      <component id="bf27b" class="javax.swing.JRadioButton" binding="studentRadioButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="14" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13223621"/>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <text value="Student  "/>
+        </properties>
+      </component>
+      <component id="4d674" class="javax.swing.JButton" binding="signUpButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="14" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10131350"/>
+          <font name="ROG Fonts" size="24" style="2"/>
+          <foreground color="-15724271"/>
+          <hideActionText value="true"/>
+          <text value="Sign up"/>
+        </properties>
+      </component>
+      <component id="bea82" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13223621"/>
+          <font name="Arial Black" size="14" style="3"/>
+          <foreground color="-1"/>
+          <text value="Select Subjects: "/>
+        </properties>
+      </component>
+      <component id="6d61e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="7" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13223621"/>
+          <font name="Algerian" size="24" style="3"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Sign up "/>
+        </properties>
+      </component>
+      <component id="898b6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c7a61" class="javax.swing.JTable" binding="subjectTable">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="15" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoCreateRowSorter value="false"/>
+          <font name="Arial Black" size="12" style="3"/>
+          <foreground color="-15724271"/>
+          <gridColor color="-10131350"/>
+        </properties>
+      </component>
+      <component id="58028" class="javax.swing.JButton" binding="backButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="6" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10131350"/>
+          <font name="ROG Fonts" size="24" style="2"/>
+          <foreground color="-15724271"/>
+          <hideActionText value="false"/>
+          <text value="Back "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
